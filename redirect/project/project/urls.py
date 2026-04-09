@@ -21,5 +21,13 @@ from app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('demo/',views.demo,name='demo'),
-    path('home/',views.home,name='home')
+    path('home/',views.home,name='home'),
+    path('demo1/',views.demo1,name='demo1'),
+    # path('index/<int:x>/<str:y>/',views.index,name='index'),
+    # path('index/<int:a>/<str:b>/',views.index,name='index'),
+    path('index/<int:a>/<str:b>/',views.index,name='index'),
+    path('demo2/',views.demo2,name='demo2')
+    
+    
+    
     ]
