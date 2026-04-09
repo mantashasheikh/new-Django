@@ -1,26 +1,14 @@
-<header class="navbar">
-  <!-- 1. Logo Section -->
-  <div class="navbar-logo">
-    <a href="/"><img src="logo.png" alt="Airbnb"></a>
-  </div>
+<head>
+    <title>landing page</title>
+</head>
+<nav style="background:#333; padding:15px;">
+    
+    <a href="{% url 'home' %}" style="color:white; margin-right:20px; text-decoration:none;">Home</a>
+    
+    <a href="{% url 'about' %}" style="color:white; margin-right:20px; text-decoration:none;">About Us</a>
+    
+    <a href="{% url 'services' %}" style="color:white; margin-right:20px; text-decoration:none;">Services</a>
+    
+    <a href="{% url 'contact' %}" style="color:white; text-decoration:none;">Contact</a>
 
-  <!-- 2. Search Pill Section -->
-  <div class="navbar-search">
-    <button class="search-pill">
-      <span class="anywhere">Anywhere</span>
-      <span class="any-week">Any week</span>
-      <span class="add-guests">Add guests</span>
-      <div class="search-icon">🔍</div>
-    </button>
-  </div>
-
-  <!-- 3. User Menu Section -->
-  <div class="navbar-user">
-    <a href="#" class="host-link">Airbnb your home</a>
-    <button class="globe-btn">🌐</button>
-    <div class="user-menu">
-      <span class="menu-icon">☰</span>
-      <span class="profile-icon">👤</span>
-    </div>
-  </div>
-</header>
+</nav>

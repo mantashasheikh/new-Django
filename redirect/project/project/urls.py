@@ -26,7 +26,7 @@ urlpatterns = [
     # path('index/<int:x>/<str:y>/',views.index,name='index'),
     # path('index/<int:a>/<str:b>/',views.index,name='index'),
     path('index/<int:a>/<str:b>/',views.index,name='index'),
-    path('demo2/',views.demo2,name='demo2')
+    
     
     
     

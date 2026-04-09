@@ -1,9 +1,17 @@
-from django.shortcuts import render
-from django.urls import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
-def home(req):
-    return render(req , 'home.html')
+def landing(request):
+    return render(request, 'landing.html')
 
-def landing(req):
-    return render(req , 'landing.html')
+def home(request):
+   return render(request, 'home.html' )
+
+def about(request):
+    return render(request, 'about.html' )
+
+def contact(request):
+    return render(request, 'contact.html' )
+
+def services(request):
+    return render(request, 'services.html' )
