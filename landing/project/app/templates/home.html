@@ -11,10 +11,14 @@
 
 </style>
 {% endblock %}
+<nav>{% block btn %}<button style="background-color: aqua; margin-left: 20px;"><a href="{% url 'landing' %}" style="text-decoration: none;  ">go to landing page</a></button>{% endblock btn %}</nav>
 
 
+<div >
+    {% block content %} 
+       <h1>Home Page</h1>
+       <img src="https://img.freepik.com/free-vector/beautiful-home_24877-50819.jpg?semt=ais_hybrid&w=740&q=80" alt="home" height="200px" width="200px">
+    {% endblock %}
+</div>
 
-{% block content %} 
-This is home page created through templates cutting.......
 
-{% endblock %}

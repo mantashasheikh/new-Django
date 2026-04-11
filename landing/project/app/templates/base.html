@@ -18,7 +18,7 @@
     
        <a href="{% url 'contact' %}" style="color:white; text-decoration:none;">Contact</a>
 
-       <button style=" background-color: aqua; margin-left: 20px;"><a href="{% url 'landing' %}"style="color:black; text-decoration:none;">Go to Landing Page</a></button>
+       {% block btn %} {% endblock btn %}
 
     </nav>
 

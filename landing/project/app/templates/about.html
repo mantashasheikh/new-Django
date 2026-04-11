@@ -11,10 +11,15 @@
 
 </style>
 {% endblock %}
+<nav>{% block btn %}<button style="background-color: aqua; margin-left: 20px;"><a href="{% url 'landing' %}" style="text-decoration: none;  ">go to landing page</a></button>{% endblock btn %}</nav>
 
 
 
 {% block content %} 
-<h1>This is About page</h1> 
+    <h1>This is About page</h1>
+    <video width="640" height="360" controls>
+       <source src="c:\Users\DELL E7490\Desktop\Saiyaara (2025).mkv" type="video/mp4">
+ 
+    </video>
 
 {% endblock %}

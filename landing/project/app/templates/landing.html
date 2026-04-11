@@ -1,17 +1,21 @@
-<head>
-    <title>landing page</title>
-</head>
-<nav style="background:#333; padding:15px;">
-    
-    <a href="{% url 'home' %}" style="color:white; margin-right:20px; text-decoration:none;">Home</a>
-    
-    <a href="{% url 'about' %}" style="color:white; margin-right:20px; text-decoration:none;">About Us</a>
-    
-    <a href="{% url 'services' %}" style="color:white; margin-right:20px; text-decoration:none;">Services</a>
-    
-    <a href="{% url 'contact' %}" style="color:white; text-decoration:none;">Contact</a>
+{% extends 'base.html' %}
 
-</nav>
-<br>
-<br> 
-<h1>landing page</h1>
+{% block title %} Landing{% endblock title %}
+
+{% block css %} 
+<link rel="stylesheet" href="style.css">
+{% endblock %}
+
+{% block style %} 
+<style>
+
+</style>
+{% endblock %}
+
+
+
+{% block content %} 
+<h1>Landing Page</h1>
+
+
+{% endblock %}
