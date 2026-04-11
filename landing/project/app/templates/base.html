@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  {% block title %} {% endblock title %} </title>
+    {% block css %} {% endblock %}
+    {% block style %} {% endblock %}
+</head>
+<body>
+    <nav style="background:#333; padding:15px;">
+    
+       <a href="{% url 'home' %}" style="color:white; margin-right:20px; text-decoration:none;">Home</a>
+    
+       <a href="{% url 'about' %}" style="color:white; margin-right:20px; text-decoration:none;">About Us</a>
+    
+       <a href="{% url 'services' %}" style="color:white; margin-right:20px; text-decoration:none;">Services</a>
+    
+       <a href="{% url 'contact' %}" style="color:white; text-decoration:none;">Contact</a>
+
+       <button style=" background-color: aqua; margin-left: 20px;"><a href="{% url 'landing' %}"style="color:black; text-decoration:none;">Go to Landing Page</a></button>
+
+    </nav>
+
+    <div style="height: 250px;">
+        {% block content %} {% endblock %}
+    </div>
+
+    <footer>This is footer content</footer>
+    
+</body>
+</html>
